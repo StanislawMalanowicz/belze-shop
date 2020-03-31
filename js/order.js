@@ -5,7 +5,8 @@ orderButton.addEventListener('click', (e) => {
     const items = document.querySelectorAll('.itemRow');
     // items.map(el => el.innerHTML)
     const list = [...items];
-    console.log('click order: ', list.map(el => el.innerText));  
+    const activeOrder = list.map(el => el.innerText.split(/\t/).filter(Boolean).join(" "))
+    console.log('click order: ', activeOrder);  
 
 
 })
