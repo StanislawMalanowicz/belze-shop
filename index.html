@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>OFFICIAL BELZEBONG SHOP! </title>
 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 		<!-- Bootstrap -->
 		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,52 +19,21 @@
 		<![endif]-->
     
 		<style>
-      /* video */
-      #myVideo {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%;
-          min-height: 100%;
-          z-index: -1;
-          filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
-       }
     
-			.simpleCart_shelfItem {
-				padding: 20px;
-				transition: all .4s;
-				-webkit-transition: all .4s;
-			}
-			.simpleCart_shelfItem:hover {
-				transform: scale(1.05);
-				-ms-transform: scale(1.05);
-				-webkit-transform: scale(1.05);
-				box-shadow: 0 0 20px #888;
-				background-color: #fff;
-			}
-
-			.simpleCart_items img {
-				max-width: 64px;
-				max-height: 64px;
-			}
-			.item-quantity, .item-decrement, .item-increment {
-				text-align: center;
-			}
-			.mix {
-				display: none;
-			}
 		</style>
 	</head>
 	<body>
    
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
       <source src="./video/FreeSmokeYoutube.mp4" type="video/mp4">
-    </video>
-    <!-- <div id="myVideo">
-      <img src="./img/smoke-1_1280.jpg" alt="">
-    </!--> -->
-<div class="green-filter"></div>
+    </video> -->
+  
 <div class="container">
+
+  
+</div><!-- /.container -->
+
+
 	<div class="row">
 		<div class="col-sm-12">
 
@@ -104,7 +75,7 @@
 			
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
 	<div class="modal-dialog">
 		<div class="modal-content">
 
@@ -114,6 +85,121 @@
 			</div>
 
 			<div class="hideIfEmpty">
+
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+          <fieldset>
+        
+        
+        
+            <!-- Text input-->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">First Name</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+            <!-- Text input-->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">Last Name</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">E-Mail</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+            <!-- Text input-->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">Address</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="address" placeholder="Address" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+            <!-- Text input-->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">City</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="city" placeholder="city" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+        
+        
+            <!-- Text input-->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">Zip Code</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+        
+        
+        
+            <!-- Text area -->
+        
+            <div class="form-group">
+              <label class="col-md-4 control-label">Project Description</label>
+              <div class="col-md-5 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                  <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Success message -->
+            <!-- <div class="alert alert-success" role="alert" id="success_message">Success <i
+                  class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div> -->
+        
+        
+        
+          </fieldset>
+        </form>
+        
+          <!-- <form>
+            <div class="form-row">
+              
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="State">  
+              </div>
+             
+            </div>
+          </form> -->
+       
 
 				<div class="modal-body">
 					<div class="simpleCart_items"></div>
@@ -144,7 +230,7 @@
 					<a href="javascript:;" class="simpleCart_empty btn btn-default">DELETE ALL</a>
 					<!-- create a checkout button -->
           <a href="javascript:;" class="simpleCart_checkout btn btn-primary">ORDER</a>
-          <button class="order-button" type="button">send</button>
+          <button class="order-button btn btn-danger" type="button">send</button>
 				</div><!-- /modal-footer -->
 
 			</div><!-- /hideIfEmpty -->
