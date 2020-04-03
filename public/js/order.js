@@ -1,4 +1,5 @@
 const orderButton = document.querySelector('.order-button');
+const formSubmitButton = document.querySelector('.formBtn')
 
 orderButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -9,4 +10,10 @@ orderButton.addEventListener('click', (e) => {
     console.log('click order: ', activeOrder);  
 
 
+})
+
+formSubmitButton.addEventListener('click', (e) => {
+    
+    e.preventDefault();
+    console.log('form button: ');
 })
